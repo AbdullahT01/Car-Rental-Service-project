@@ -1,0 +1,252 @@
+:root{ /*We will use these colors for consistency and possible darkmode feature in the futur*/
+  --color-black: black;
+  --color-background: #f6f6f9;
+  --color-white: #fff;
+  --color-dark: #363949;
+  --color-light: #rgba(0,0,0,0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+  margin: 0; 
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+html{
+  font: 14px;
+}
+
+body{
+  width: 100vw; /*100 % of the viewport width*/
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  font-size: 0.8rem;
+  background: var( --color-background); /*this is the color background*/
+  user-select: none;
+  overflow-x: hidden;
+ 
+}
+
+.container{
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1,6rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+  color: var(--color-dark); /*dark color for the links*/
+}
+
+aside .sidebar{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  height: 90vh;
+  position: fixed;
+  min-width: 225px;
+  width: 14vw;
+}
+
+aside h3{
+  font-weight: 500;
+}
+
+aside .sidebar a{
+  display: flex;
+  color: var( --color-dark);
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a span { /*we are targeting the buttons we got from the google fonts page*/
+  font-size: 30px;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child{ /*We are targetting the last a tag in the sidebar class AKA the logout button*/
+  position: absolute;
+  bottom: 32px; /*We need to make the logout button permanently in the bottom of the page, thus making the position absolute*/
+  width: 100%;
+}
+
+aside .sidebar a.active{
+  background-color:#D4ECFF;
+  color: #0057B7;
+  margin-left: 0;
+}
+
+aside .sidebar a.active:before{
+  content: '';
+  width: 6px;
+  height: 100%;
+  background:  #0057B7;
+}
+
+
+aside .sidebar a.active span{ /*The button text of the active element*/
+  color: #0057B7; 
+  margin-left: 16px
+ 
+}
+
+aside .sidebar a:hover span{ 
+  margin-left: 16px;
+}
+
+aside .sidebar a:hover{
+  color: #0057B7 ;
+  
+}
+
+.car-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem; 
+  width: 75vw;
+  margin-top: 25vh;
+  margin-left: 3vw;
+}
+
+/************************************************************temp**********************************************************/
+
+.header{
+  display: flex;
+  width: 98vw;
+  position: fixed;
+  margin-left: -2vw;
+  height: 10vh;
+  z-index: 10000;
+}
+
+/************************************************************************************************************************/
+
+.Reservation-Container{
+  position: relative;
+  display: flex;
+  width: 84vw;
+}
+
+.Account_Management-Container{
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 80vh;
+  margin-top: 20vh;
+  margin-left: 5vw;
+  padding-top: 5%;
+}
+
+.filters{
+  display: flex;
+  position: absolute;
+  width: 70vw;
+  height: 9vh;
+  background-color: white;
+  margin-top: -10vh;
+  margin-left: 5vw;
+  border-radius: 10px;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.filters button{
+  font-weight: bold;
+  background-color: #dae6f9;
+  color: royalblue;
+  border: none;
+  border-radius: 8px;
+  min-width: 7.75rem;
+  height: 2rem;
+  transition: .4s;
+  margin-left: 0vw;
+}
+
+.filters button:hover{
+  background-color: royalblue;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+.filters input{
+  width: 13vw;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.filters select {
+  width: 13vw;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  background-color: white; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  cursor: pointer; 
+}
+
+
+.filters select::-ms-expand {
+  display: none; 
+
+}
+
+.filters select option {
+  padding: 8px; 
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee; 
+}
+
+.filters select option:hover {
+  background-color: #e1e1e1;
+}
+
+
+.RepContainer{
+  display: flex;
+  gap: 3rem;
+  margin-top: 20vh;
+  margin-left: 5vw;
+}
+
+.repFilter{
+  height: 13vh;
+  margin-top: -12.5vh;
+}
+
+.repFilter input{
+  width: 8rem;
+}
+.buttonFilterCSrep{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  gap: 0.5rem;
+}
+
+.buttonFilterCSrep button{
+  height: 2rem;
+}
+
+.findUserForm{
+  margin-left: -10vh;
+  background-color: red;
+}

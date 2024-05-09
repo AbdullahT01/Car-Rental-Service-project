@@ -1,0 +1,44 @@
+data: {
+  "success": true,
+  "data": [
+    {
+      "ReservationID": 1,
+      "userID": 7,
+      "carID": 13,
+      "startDate": "2024-03-20",
+      "endDate": "2024-03-22",
+      "startTime": "09:00",
+      "endTime": "09:00",
+      "totalPrice": 120.00,
+      "isActive": true,
+      "car": {
+        "carID": 13,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "red",
+        // Other car attributes...
+      }
+    },
+    {
+      "ReservationID": 2,
+      "userID": 5,
+      "carID": 15,
+      "startDate": "2024-03-25",
+      "endDate": "2024-03-27",
+      "startTime": "10:00",
+      "endTime": "10:00",
+      "totalPrice": 150.00,
+      "isActive": true,
+      "car": {
+        "carID": 15,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "color": "blue",
+        // Other car attributes...
+      }
+    }
+    // More reservations...
+  ]
+}

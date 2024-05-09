@@ -1,0 +1,26 @@
+.AccountManagementSection-Container{
+    background-color: white;
+    margin-bottom: 2rem;
+    width: 40vw;
+    height: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.AccountManagementSection-Container:hover{
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.AccountManagementSection-Title{
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 2rem;
+    color: #333;
+}

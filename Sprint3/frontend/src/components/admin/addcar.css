@@ -1,0 +1,92 @@
+.CarInputForm {
+    margin-top: -20vh;
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.CarInputForm input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.CarInputForm select {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.CarInputForm .submit-button {
+    font-weight: bold;
+    background-color: #dae6f9;
+    color: royalblue;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.CarInputForm .submit-button:hover {
+    background-color: royalblue;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.CarInputForm .image-preview {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.CarInputForm .form-title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.CarInputForm select,
+.CarInputForm .input {
+    height: 40px;
+    font-size: 16px;
+}
+
+.CarInputForm label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.CarInputForm .form-section {
+    margin-bottom: 20px;
+}
+
+/* Animation for the file input when a file is selected */
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,265 @@
+.car-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between image and info */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 200px;
+    height: auto; 
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    
+}
+
+.car-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 8px;
+    flex-grow: 1; 
+    
+}
+
+.car-name {
+    font-size: 1.1em; 
+    font-weight: bold; 
+}
+
+
+
+
+.icon-info {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: flex-start; 
+    align-items: center;
+    margin: 8px 0;
+    gap: 1.25rem;
+}
+
+.car-number-of-doors, .car-capacity, .car-luggage-room {
+    display: flex;
+    align-items: center;
+    gap: 3px; 
+    justify-content: flex-start;
+}
+
+.number-of-doors, .capacity-number, .car-luggage-room {
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Icons style */
+.material-icons-sharp, svg {
+    font-size: 1.25rem;
+    color: #0057B7;
+   
+    
+}
+
+.price-button-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 2px;
+}
+
+.car-price {
+    font-size: 1.25em; 
+    color: black;
+    font-weight: bold;
+}
+
+.car-card-button {
+    font-weight: bold;
+    font-family: monospace;
+    background-color: #dae6f9;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    height: 35px;
+    transition: .3s;
+  }
+  
+.car-card-button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+  
+
+
+/******************************************For Modal**************************************/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000; 
+    
+}
+  
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 475px; 
+    max-height: 600px;
+    z-index: 1001;
+}
+
+/******************************************For CarCardModal**************************************/
+
+
+.carCardForm-customModal-container {
+    background-color: var(--color-white);
+    width: 50%;
+    min-width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.5rem;
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+  }
+  
+  .carCardForm-customModal-container form {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .carCardForm-customModal-container label {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    min-width: 180px;
+  }
+  
+  .carCardForm-customModal-container input {
+    background: var(--color-background);
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    color: var(--color-dark);
+    width: 100%;
+  }
+  
+.carCardForm-customModal-container input[type="submit"] {
+    
+    width: auto;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    align-self: center;
+    margin-left: 10%;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: #dae6f9;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    flex-basis: 75%;
+}
+
+.carCardForm-customModal-container input[type="submit"]:hover{
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+
+.date-container{
+    margin-top: 1.10rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    gap: 1.25rem;
+    position: relative;
+    width: 100%;
+    
+}
+.toggleContainer{
+    display: flex;
+   
+}
+.toggleTitle{
+    margin-right: 4rem;
+    
+}
+
+.toggleTitle2{
+    margin-left: -6rem;
+    margin-right: 5rem;
+}
+/* The switch - the box around the slider */
+.switch {
+    width: 10rem;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+   
+    height: 2em;
+}
+   
+   
+   .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    width: 2rem;
+   }
+   
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #eee;
+    transition: 0.4s;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em #dfd9d9;
+    width: 4rem;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.4em;
+    border-radius: 0.3em;
+    left: 0.3em;
+    bottom: 0.7em;
+    background-color: lightsalmon;
+    transition: 0.4s;
+    box-shadow: 0 0.4em #bcb4b4;
+   }
+   
+   .slider:hover::before {
+    box-shadow: 0 0.2em #bcb4b4;
+    bottom: 0.5em;
+   }
+   
+   input:checked+.slider:before {
+    transform: translateX(2em);
+    background: lightgreen;
+   }
+
+ 

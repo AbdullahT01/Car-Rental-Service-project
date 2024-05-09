@@ -1,0 +1,362 @@
+.registrationformCS {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin-top: 10vh;
+    margin-left: 7.5vw;
+}
+
+.registrationformCS .title
+{
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.registrationformCS .title::before,
+.registrationformCS .title::after
+{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 90%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.registrationformCS .title::before
+ {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.registrationformCS .title::after
+ {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.registrationformCS .input
+{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add some space between inputs */
+}
+
+.registrationformCS .input.wrong {
+    border: 1.5px solid #f90202; /* Brighter red for visibility */
+    box-shadow: 0 0 5px rgba(235, 23, 23, 0.397); /* Optional: add a subtle glow effect */
+}
+
+.registrationformCS .input.right {
+    border: 1.5px solid #31b436; /* A shade of green indicating success */
+    box-shadow: 0 0 7px rgba(54, 167, 58, 0.5); /* Optional: add a subtle glow effect */
+}
+
+.labelForBadInput {
+    margin-bottom: -8px;
+    margin-left: 3px;
+    font-weight: 500;
+    color: #D32F2F;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.75rem;
+}
+.register-button {
+    font-weight: bold;
+    background-color: #dae6f9;
+    color: royalblue;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 35px;
+    transition: .3s;
+  }
+  
+.register-button:hover {
+    background-color: royalblue;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+  
+.ProfileContainer{
+    width: 20rem;
+    height: auto; 
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pfpContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 10rem; 
+}
+
+#pfp {
+    font-size: 8rem;
+}
+
+.separator {
+    
+    border-top: 1px solid ; /* Faint line style */
+    margin: 20px 0; /* Space around the line */
+}
+
+.userInfo {
+    text-align: center; /* Center the user info text */
+}
+
+.infoItem {
+    margin: 5px 0;
+    font-weight: bold; /* Space between info items */
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: space-around; /* Space between buttons */
+    width: 100%; /* Full width of the container */
+    margin-top: 20px; /* Space above the buttons */
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 75%;
+    gap: 1.25rem;
+    cursor: pointer; 
+}
+
+.notReady{
+    background-color: rgba(255, 102, 102, 0.9); 
+    color: #fff;
+}
+
+.notReady:hover{
+    color: #fff;
+    background-color: rgba(255, 102, 102, 0.9); 
+    box-shadow: 0 0 0 5px rgba(255, 102, 102, 0.3);
+}
+
+@keyframes pulsate {
+    0% {
+      box-shadow: 0 0 0 0 rgba(130, 196, 134, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(130, 196, 134, 0);
+    }
+    
+  }
+  
+  .ready {
+    background-color: #8fdf81; /* Light green */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    animation: pulsate 1s infinite ease-in-out; /* Apply the pulsate animation */
+  }
+  
+  .ready:hover {
+    background-color: #8fdf81; /* Bolder green */
+    box-shadow: 0 0 0 5px rgba(147, 232, 152, 0.5);
+    animation: none;
+  }
+  
+
+.chooseReservationContainer{
+    padding: 1rem;
+    width: 27.5rem;
+    height: 15s.5rem;
+    background-color: white;
+   
+}
+
+.reservedCar{
+    margin-top: -2rem;
+    margin-left: 50%;
+    height: 7rem;
+}
+
+.ChooseReservationTitle{
+   margin-bottom: 0.5rem;
+}
+
+/**********************************************************************************************/
+
+.checkin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    max-height: 500px; 
+    overflow-y: auto;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .form-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    font-size: 16px;
+    color: #666;
+    margin-left: 1px;
+  }
+  
+  .form-checkbox {
+   
+    cursor: pointer; /* Makes it clear the checkbox is clickable */
+    /* Custom checkbox styles */
+    width: 1.2em; /* Width of the checkbox */
+    height: 1.2em; /* Height of the checkbox */
+    vertical-align: middle; /* Aligns checkbox with text */
+    border: 1px solid #ccc; /* Border color of checkbox */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    background-color: #f9f9f9; /* Background color */
+    -webkit-appearance: none; /* Removes default checkbox style */
+    appearance: none; /* Removes default checkbox style */
+    outline: none; /* Removes the outline */
+    
+  }
+  
+
+  
+  .form-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: vertical;
+  }
+  
+  .form-submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .checkbox-wrapper .inp-cbx {
+    display: none;
+  }
+  
+  .checkbox-wrapper .cbx {
+    cursor: pointer;
+    user-select: none;
+    
+  }
+  
+  .checkbox-wrapper .cbx span:first-child {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+    margin-right: 5px;
+  }
+  
+  .checkbox-wrapper .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 16px;
+    stroke-width: 2;
+    stroke: #fff;
+    fill: none;
+  }
+  
+  .checkbox-wrapper .cbx:hover span:first-child {
+    border-color: #506eec;
+  }
+  
+  .checkbox-wrapper .inp-cbx:checked + .cbx span:first-child {
+    background-color: #506eec;
+    border-color: #506eec;
+  }
+  
+  .checkbox-wrapper .inp-cbx:checked + .cbx span:first-child:before {
+    content: '';
+    background: #506eec;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  
+  /* Keyframes for the wave animation */
+  @keyframes wave {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+.rentalModal{
+  width: 1000px;
+}
+
+  .rental-agreement-content {
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.agrementBTN{
+  height: 50px;
+}
+
+.agreementInput{
+  border: solid 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  height: 30px;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.CAR{
+  margin: 0;
+}
+

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.signIn-button {
+    font-weight: bold;
+    background-color: #dae6f9;
+    color: royalblue;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    transition: .3s;
+    margin-left: auto;
+    margin-top: 4vh;
+  }
+  
+.signIn-button:hover {
+    background-color: royalblue;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.logo {
+    margin-top: 4vh;
+    margin-left: 2vw;
+    font-size: 3.25em; 
+    color: #070707; 
+    font-weight: bold;
+}
+
+.logo-drive {
+    color: black;
+}
+
+
+.logo-dev {
+    color: royalblue; 
+}
