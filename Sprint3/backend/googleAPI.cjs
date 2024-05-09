@@ -1,6 +1,6 @@
 const googleMaps = require("@google/maps");
 const googleMapsClient = googleMaps.createClient({
-  key: "AIzaSyB5hLUR5v5Thuw_5hI_anUPwtT4fKgEb8M",
+  key: "",
   Promise: Promise,
 });
 
