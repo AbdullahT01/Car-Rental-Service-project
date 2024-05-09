@@ -12,7 +12,7 @@ export default function LocationForm() {
   // Load the Google Maps script and initialize the map with markers
   useEffect(() => {
     const loader = new Loader({
-      apiKey: "AIzaSyDpBb0YTNf0vAig51bOVBFeanl_xn5I2iA", // Replace with your actual API key
+      apiKey: "", // Replace with your actual API key
       version: "weekly",
     });
 
